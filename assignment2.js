@@ -27,11 +27,17 @@ function printMotto(){
         z++
     }
 }
+function displayMotto(){
+    for(i=1;i<=times;i++){
+        console.log(i +": " +pharse)
+    }
+}
 
 
 let pharse = getMotto();
 let times = getCount();
  let print=printMotto();
+ displayMotto();
 
 
 

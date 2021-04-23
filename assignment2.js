@@ -23,9 +23,12 @@ function getMotto(){
 function printMotto(){
 
  for(i= 1 ;i <=times ; i++){
-      
+     
     return console.log(pharse);
 }
  }
+
 let pharse = getMotto();
 let times = getCount();
+ printMotto();
+

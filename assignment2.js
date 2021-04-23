@@ -19,14 +19,14 @@ function getMotto(){
     return parseFloat(prompt("How Many time you want to see your Phrases"));
   
  }
-
-function printMotto(){
-
+ function printMotto()
+ {
  for(i= 1 ;i <=times ; i++){
-     
+
+  
     return console.log(pharse);
 }
- }
+}
 
 let pharse = getMotto();
 let times = getCount();

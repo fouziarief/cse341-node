@@ -19,7 +19,19 @@ function getMotto(){
     return parseFloat(prompt("How Many time you want to see your Phrases"));
   
  }
+function playAgain()
+{
+    let again = prompt("Do you like play again?")
+    if (again ===  'y')
+    {
+        playAgain()
 
+    }
+    else{
+        prompt("thanks for playing")
+    }
+
+}
 function printMotto(){
     let z= 1;
     while (z<=times) {
@@ -33,10 +45,14 @@ function displayMotto(){
     }
 }
 
-
+function playGame(){
 let pharse = getMotto();
 let times = getCount();
  let print=printMotto();
+}
+let pharse =" ";
+let times =" ";
+playAgain();
  displayMotto();
 
 

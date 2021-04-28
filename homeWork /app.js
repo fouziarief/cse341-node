@@ -4,7 +4,7 @@ const imgList = document.querySelector('.list')
 const input = document.querySelector('#enter')
 const val = document.getElementById('num')
 
-console.log(imgList)
+
 
 //add event
 button.addEventListener('click',addList)
@@ -23,8 +23,6 @@ imgList.appendChild(newList)
 //create a img attribute
 const link = document.createElement('img')
 link.classList.add('picture')
-
-
 link.setAttribute("src" ,input.value)
   link.setAttribute("width", "304");
   link.setAttribute("height", "228");

@@ -17,10 +17,9 @@ function addList(e){
 
 const newList =document.createElement('li')
 newList.classList.add('imgClass')
-newList.innerText=input.value
 imgList.appendChild(newList)
 
-//create a img attribute
+        //create a img attribute
 const link = document.createElement('img')
 link.classList.add('picture')
 link.setAttribute("src" ,input.value)
@@ -28,27 +27,22 @@ link.setAttribute("src" ,input.value)
   link.setAttribute("height", "228");
   newList.appendChild(link)
 
-// clear text
+        // clear text
 input.value =" "
 
-// Number of images
-
+        // Number of images
 function getValue()
 {
 let count = imgList.length+1
 val.innerText=count;
 
-console.log(count)
 }
-
-e.preventDefault();
-
-//delete image button
-
+        //delete image button
     const newDel = document.createElement('button')
     newDel.classList.add('remove')
     newDel.innerText='Remove'
     newList.appendChild(newDel)
+    e.preventDefault();
 }
 
 //delete function

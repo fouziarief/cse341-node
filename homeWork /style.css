@@ -15,14 +15,18 @@ h1{
 form{
     padding: 20px;
     font-size: 30px;
+    margin: 20px;
 
+}
+label{
+   padding: 20px;
 }
 #enter {
     padding: 10px 30px 0 10px;
     font-size: 20px;
     
 }
-#image{
+#image , .remove{ 
     margin-left: 30px;
     width: 100px;
     height: 25px;
@@ -36,15 +40,14 @@ form{
     border: none;
     box-shadow: rgba(44, 41, 44, 0.133) -1px 5px  3px ;
 }
-#image:hover{
+#image,.remove:hover{
     background-color: rgb(128, 128, 230);
     color: #ffffff;
 }
 
 .imgClass{
-    padding: 20ppx;
-    height: 50px;
-    width: 10px;
+    padding: 20px;
+    align-items: center;
     margin: 20px;
-    display: grid;
-    grid-template-rows: 10px 30px;
+    
+}

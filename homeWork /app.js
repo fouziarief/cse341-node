@@ -1,9 +1,14 @@
+const form =document.querySelector('#imgForm')
 const button = document.getElementById('image')
 const imgList = document.querySelector('.list')
 const input = document.querySelector('#enter')
+const val = document.getElementById('num')
+
+
 
 //add event
 button.addEventListener('click',addList)
+imgList.addEventListener('click' ,delList)
 
 //add function
 
@@ -15,7 +20,10 @@ const newList =document.createElement('li')
 newList.classList.add('imgClass')
 //create a img attribute
 
-const link = document.createElement('img src')
+const link = document.createElement('img')
+link.setAttribute("src" ,input);
+  link.setAttribute("width", "304");
+  link.setAttribute("height", "228");
 
 newList.appendChild(link)
 newList.innerText=input.value
@@ -24,6 +32,28 @@ newList.innerText=input.value
 imgList.appendChild(newList)
 input.value =" "
 
-console.log(newList)
+function getValue()
+{
+let value = newList.length-1
+val.innerText=value
+console.log(value)
+}
+
 e.preventDefault();
+
+//delete image button
+
+    const newDel = document.createElement('button')
+    newDel.classList.add('remove')
+    newDel.innerText='Remove'
+    newList.appendChild(newDel)
+}
+
+//delete function
+function delList(e){
+    const item =e.target;
+    if(item.classList[0] === 'remove'){
+        const newList = item.parentElement ;
+        newList.remove();
+    }
 }

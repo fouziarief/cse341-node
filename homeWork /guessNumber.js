@@ -1,16 +1,46 @@
 // guess the number 
+//declare the variables
 
-let input = prompt(" Guess Your Number (0-20)");
-let number =Math.floor(Math.random()*20)
+let form=document.querySelector('#form')
 
-if(input=== null){
-    
-    alert(number + ' Your Guess right .')
-}else if(input<number)
-{
-alert('Your Guess is low. ' + number + ' is right Number')
+let btn =document.querySelector('.game')
+let msg =document.querySelector('.messg');
+
+
+//add event
+
+btn.addEventListener('click' ,sumbitDate)
+
+
+function sumbitDate(e){
+    let min= document.querySelector('#min').value
+    let max= document.querySelector('#max').value
+    if(!min || !max  || min>=max){
+        updateDom("Enter the Value btwn 0 to 100" ,'red');
+    }else{      
+        numberGuessGame(min,max);
+    }
 }
-if(input>number)
-{
-    alert('Your Guess is high. ' + number +' is right Number')
+
+function updateDom(value,color){
+    msg.style.color =color;
+  msg.textContent=value;
+  e.preventDefault();
+}
+
+function numberGuessGame(min, max){
+    let randomNum = randomNumber(min, max);
+    let message = "Please enter a number between " + min + " and " + max + ".";
+
+    do {
+        let userGuess = prompt(message)
+        (userGuess=== val)
+        updateDom("Congrats","green");
+    } while(false)
+    console.log(randomNum)
+}
+
+function randomNumber(min, max) { 
+    return Math.floor(Math.random() * (max - min) + min);
+    e.preventDefault();
 }

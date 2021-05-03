@@ -27,13 +27,14 @@ link.setAttribute("src" ,input.value)
   link.setAttribute("height", "228");
   newList.appendChild(link)
 
-//no of images
+//number of images
+
   let count = document.getElementsByClassName('imgClass')
   let item=count.length
   val.innerText=item
 
         // clear text
-input.value =" "
+input.value =" ";
 
         //delete image button
     const newDel = document.createElement('button')
@@ -41,15 +42,14 @@ input.value =" "
     newDel.innerText='Remove'
     newList.appendChild(newDel)
     e.preventDefault();
-  
 }
-
 //delete function
 function delList(e){
     const item =e.target;
     if(item.classList[0] === 'remove'){
         const newList = item.parentElement ;
         newList.remove();
+        
     }
 }
 

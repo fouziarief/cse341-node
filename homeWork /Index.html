@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+body{
+    background-color: rgb(219, 215, 215);
+}
+form{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    border: solid black 2px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 2px #000;
+
+}
+p{
+    font-size: 15px;
+    color: rgb(37, 36, 36);
+}
+label{
+    margin: 10px;
+    padding: 5px;
+    font-size: 19px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 150px;
+    display: inline-block;
+    
+}
+input{
+    margin: 10px;
+    
+
+   
+}
+.game{
+    font-size: 1.2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+border-radius: 10px 15px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    outline: none;
+    border: none;}
+    .game:hover{
+transition: ease .3s;
+    background-color: #000;
+    color: #fff;
+    background-color: none;
+}
+    </style>
+</head>
+<body>
+<form name="numberGuesser" id="form">
+    <h1>Number Guessing Game</h1><br>
+    <p>Please enter a low number and a high number for our <br>guessing game range (for Ex 1-100)</p>
+<label for="min">Bottom of Range</label>
+<input type="number" min="1" id="min"><br>
+<label for="max">Top of Range</label>
+<input type="number" max="100" id="max"><br>
+<button class="game">Play Game</button>
+<p class="messg"></p>
+
+</form>
+
+    <script src="guessNumber.js"></script>
+</body>
+</html>

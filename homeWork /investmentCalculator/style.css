@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(profits.jpg) ;
+    /* background-size: 50rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+}
+.container{
+
+    position: relative;
+    top:10px;
+    left:50px;
+    width:35%;
+    height: 60vh; 
+    padding: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:blue;
+    border-radius: 10px;
+    background-color:rgba(128, 128, 128, 0.596)
+}
+h1{
+    color:blue;;
+    padding: 0 10px 10px 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+label{
+    width: 200px;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    padding:7px;
+    color:blue;
+  
+}
+input{
+   width: 200px;
+    padding: 3px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    opacity: .5;
+    
+}
+#button{
+    padding: 7px;
+    width: 200px;
+    margin:20px 0 0 10px;
+    color: #f8a007;
+    background-color: rgba(13, 9, 226, 0.548); 
+    border: none;
+border-radius: 10px;
+font-size: 1.2em;
+position: absolute;
+left: 100px;
+bottom: 40%;
+
+}
+#button:hover{
+    color:rgba(13, 9, 226, 0.548) ;
+    background-color:orange; 
+    transition: ease .5s;
+}
+p{
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    margin: 35px 0px 0 15px;
+   position: absolute;
+   left: 100px;
+   bottom:25%;
+   
+}
+

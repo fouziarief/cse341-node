@@ -18,11 +18,15 @@ function sumbitData(e)
     if(!amount || amount < 0 || !rate || rate < 0 || !month || month< 0 ){
        updateDom(" Enter The Correct Values ",'white') ;
        messg.style.background ="rgb(255, 0, 0)"
+       setTimeout(clear ,3000)
+      
        
     }else{
        let futureValue= computeFutureValue(amount,rate,month)
         updateDom("The Value of Your Investment is $ " + futureValue ,"green");
-        messg.style.background ="rgb(152, 236, 152)";
+        messg.style.background ="rgb(152, 236, 152)" ;
+
+
 }}
 
 function computeFutureValue(amount,rate,month)
@@ -36,13 +40,17 @@ function computeFutureValue(amount,rate,month)
         amount += int;
     }
     amount = parseFloat(amount.toFixed(2));
-    return amount.toLocaleString();
-   
+    return amount.toLocaleString(); 
 }
+
 function updateDom(value,color){
     messg.style.color =color;
-    messg.textContent=value;
+    messg.textContent=value;   
 }
+function clear(){
+    document.querySelector('.messg').remove();
+}
+
  
 
 

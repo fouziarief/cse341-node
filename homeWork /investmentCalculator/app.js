@@ -2,11 +2,13 @@
 
 const form = document.getElementById('form'),
        btn = document.getElementById('button'),
-     messg = document.querySelector('.messg');
+     messg = document.querySelector('.messg'),
+     reloadBTN=document.querySelector('#Reload')
 
 // add event 
  
 btn.addEventListener('click',sumbitData);
+reloadBTN.addEventListener('click',reLoad);
 
 function sumbitData(e)
 {
@@ -14,6 +16,8 @@ function sumbitData(e)
     let amount =parseFloat( document.getElementById('balance').value),
         rate = parseFloat(document.getElementById('interst').value),
         month =parseFloat (document.getElementById('duration').value);
+        
+    // document.getElementById('balance').value="";
 
     if(!amount || amount < 0 || !rate || rate < 0 || !month || month< 0 ){
        updateDom(" Enter The Correct Values ",'white') ;
@@ -49,6 +53,10 @@ function updateDom(value,color){
 }
 function clear(){
     document.querySelector('.messg').remove();
+}
+
+function reLoad(){
+    window.location.reload();
 }
 
  

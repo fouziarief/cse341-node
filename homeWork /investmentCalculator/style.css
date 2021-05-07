@@ -64,6 +64,11 @@ left: 100px;
 bottom: 40%;
 
 }
+#Reload{
+    padding: 5px;
+   position: relative;
+ 
+}
 #button:hover{
     color:rgba(13, 9, 226, 0.548) ;
     background-color:orange; 
